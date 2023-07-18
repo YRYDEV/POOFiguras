@@ -1,0 +1,14 @@
+package ClasesFiguras;
+
+
+public class ClaseColeccion {
+   private String nombreColeccion;
+   private String listaFiguras;
+
+    public ClaseColeccion(String nombreColeccion, String listaFiguras) {
+        this.nombreColeccion = nombreColeccion;
+        this.listaFiguras = listaFiguras;
+    }
+   
+   
+}
