@@ -1,0 +1,61 @@
+package ClasesFiguras;
+
+/**
+ *
+ * @author ygh89
+ */
+public class Dimension {
+    private double ancho;
+    private double alto;
+    private double profundidad;
+
+    public Dimension() {
+        this.alto=0;
+        this.ancho=0;
+        this.profundidad=0;
+    }
+
+    public Dimension(double ancho, double alto, double profundidad) {
+        this.ancho = ancho;
+        this.alto = alto;
+        this.profundidad = profundidad;
+    }
+
+    public double getAncho() {
+        return ancho;
+    }
+
+    public void setAncho(double ancho) {
+        this.ancho = ancho;
+    }
+
+    public double getAlto() {
+        return alto;
+    }
+
+    public void setAlto(double alto) {
+        this.alto = alto;
+    }
+
+    public double getProfundidad() {
+        return profundidad;
+    }
+
+    public void setProfundidad(double profundidad) {
+        this.profundidad = profundidad;
+    }
+
+    @Override
+    public String toString() {
+        return "Dimension{" + "ancho=" + ancho + ", alto=" + alto + ", profundidad=" + profundidad + ",volumen=" + getVolumen()+ '}';
+    }
+    
+    public double getVolumen(){
+        return alto*ancho*profundidad;
+    }
+    
+  
+    
+    
+    
+}
