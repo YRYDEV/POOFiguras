@@ -1,0 +1,48 @@
+package ejercicio_poo_2;
+import ClasesFiguras.Dimension;
+import ClasesFiguras.Figura;
+import ClasesFiguras.Superheroe;
+
+//import ClasesFiguras.* De esta manera tambien se pueden importar todas las clases de ClasesFiguras, sin importarlas de una en una.
+    /**
+     *.youtube.com/watch?v=Y-02mgB8HF8&t=24s 
+     */
+public class Ejercicio_POO_2 {
+
+    public static void main(String[] args) {
+        
+        Superheroe sup1= new Superheroe ("Spiderman");
+        sup1.setDescripcion("lanza telas de araña y viste de rojo");
+        sup1.setNombre("Hombre Araña");
+        
+        System.out.println(sup1.getNombre());
+        System.out.println(sup1.getDescripcion());
+        
+        System.out.println(sup1.toString());
+        
+        Superheroe sup2= new Superheroe ("Batman");
+        sup2.setDescripcion("tiene las habilidades de un murcielago");
+        sup2.setNombre("Batman");
+        sup2.setCapa(true);
+        
+        System.out.println(sup2.toString());
+        
+        Dimension dimPeq=new Dimension();
+        Dimension dimGra= new Dimension (70,20,20);
+        dimPeq.setAlto(20);
+        dimPeq.setAncho(5);
+        dimPeq.setProfundidad(6);
+        
+        System.out.println(dimPeq.toString());
+        System.out.println(dimGra.toString());
+        
+        System.out.println("Volumen de la dimension pequeña es : " + dimPeq.getVolumen());
+        
+        Figura figSpi= new Figura("Spi-01",30,sup1,dimPeq);
+        System.out.println(figSpi.toString());
+        
+    }
+ 
+   
+    
+}
